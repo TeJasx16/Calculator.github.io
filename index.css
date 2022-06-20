@@ -73,17 +73,19 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 1px;
+    margin-top: 4px;
     padding: 1px;
     border: 1px solid black;
     background: black;
     border-radius: 10px;
+    height: 60px;
+    width: 60px;
 }
 
 #chkbtn input {
     background: black;
     cursor: pointer;
-    
+
 
 }
 
@@ -138,7 +140,8 @@
     cursor: pointer;
 }
 
- button {
+
+button {
     font-size: 18px;
     font-weight: 800;
     background-color: hsl(30deg 38% 79%);
@@ -169,86 +172,89 @@
 
 /* for sec theme */
 
-.secbg{
+.secbg {
     color: black;
-    background-color:hsl(0, 0%, 90%) ;
+    background-color: hsl(0, 0%, 90%);
 }
-.secthm{
+
+.secthm {
     color: black;
 }
-.secchk{
-    border: 1px solid white ;
+
+.secchk {
+    border: 1px solid white;
     background-color: hsl(0, 5%, 81%);
 }
 
-.secscrn{
+.secscrn {
     background-color: hsl(0, 0%, 96%);
     color: black;
 }
 
-.secbtns{
+.secbtns {
     background-color: hsl(0, 5%, 81%);
 }
 
-.secbtnsbg{
+.secbtnsbg {
     background-color: hsl(45, 7%, 89%);
-    box-shadow: 0px 2px 2px 0px  hsl(35, 11%, 61%);
+    box-shadow: 0px 2px 2px 0px hsl(35, 11%, 61%);
 
 }
 
-.secblubtn{
+.secblubtn {
     background-color: hsl(185, 42%, 37%);
-   box-shadow: 0px 2px 2px 0px hsl(185, 58%, 25%) ;
+    box-shadow: 0px 2px 2px 0px hsl(185, 58%, 25%);
 }
 
-.secredbtn{
-   
+.secredbtn {
+
     background-color: hsl(25, 98%, 40%);
-   box-shadow: 0px 2px 2px 0px  hsl(25, 99%, 27%) ;
+    box-shadow: 0px 2px 2px 0px hsl(25, 99%, 27%);
 
 }
 
 
 /* fro 3 theme */
-.thibg{
-    color:  hsl(52, 100%, 62%);
-    background-color:hsl(268, 75%, 9%);
+.thibg {
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 75%, 9%);
 }
 
-.thithm{
+.thithm {
     color: hsl(52, 100%, 62%);
 }
 
-.thichk{
-    border: 1px solid  hsl(268, 71%, 12%) ;
-    background-color:  hsl(268, 71%, 12%);
+.thichk {
+    border: 1px solid hsl(268, 71%, 12%);
+    background-color: hsl(268, 71%, 12%);
 }
-.thiscrn{
+
+.thiscrn {
     background-color: hsl(268, 71%, 12%);
     color: hsl(52, 100%, 62%);
 }
 
-.thibtns{
+.thibtns {
     background-color: hsl(268, 71%, 12%);
 }
 
-.thibtnsbg{
+.thibtnsbg {
     color: hsl(52, 100%, 62%);
 
     background-color: hsl(268, 47%, 21%);
-    box-shadow: 0px 2px 2px 0px  hsl(290, 70%, 36%);
+    box-shadow: 0px 2px 2px 0px hsl(290, 70%, 36%);
 
 }
 
-.thiblubtn{
+.thiblubtn {
     background-color: hsl(281, 89%, 26%);
-   box-shadow: 0px 2px 2px 0px hsl(285, 91%, 52%) ;
-   color: white;
+    box-shadow: 0px 2px 2px 0px hsl(285, 91%, 52%);
+    color: white;
 }
-.thiredbtn{
-   color: hsl(198, 20%, 13%);
+
+.thiredbtn {
+    color: hsl(198, 20%, 13%);
     background-color: hsl(176, 100%, 44%);
-   box-shadow: 0px 2px 2px 0px  hsl(177, 92%, 70%)
-   ;
+    box-shadow: 0px 2px 2px 0px hsl(177, 92%, 70%);
 
 }

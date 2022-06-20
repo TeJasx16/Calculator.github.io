@@ -1,135 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Tejas Kharade</a>.
   </div>
 
 
   <!-- start  -->
-<div class="main">
+  <div class="main">
 
-  <div class="bd">
+    <div class="bd">
 
-  <!-- thems -->
-  <div class="thems">
-    <span>calc</span>
-     
-    <div id="thm">
+      <!-- thems -->
+      <div class="thems">
+        <span>calc</span>
 
-      <span>THEME
-      </span>
+        <div id="thm">
 
-        <div class="rng">
-          <div>
+          <span>THEME
+          </span>
 
-            <span >1</span>
-            <span >2</span>
-            <span >3</span>
-          </div>
+          <div class="rng">
+            <div>
 
-          <div class="chkbtn">
-            <input type="radio" checked name="bt"  onclick="btn1()" id="bt1">
-            <input type="radio" name="bt"  onclick="btn2()" id="bt2">
-            <input type="radio" name="bt" onclick="btn3()" id="bt3">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+
+            <div class="chkbtn">
+              <input type="radio" checked name="bt" onclick="btn1()" id="bt1">
+              <input type="radio" name="bt" onclick="btn2()" id="bt2">
+              <input type="radio" name="bt" onclick="btn3()" id="bt3">
+            </div>
           </div>
         </div>
-    </div>
-      
-    
 
+
+
+      </div>
+
+      <!-- for screen -->
+      <div class="screen">
+        <p id="scrnum">123</p>
+      </div>
+
+      <!-- buttons -->
+
+      <div class="btns">
+        <div class="trdiv">
+
+          <tr class="trdiv">
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button class="blubtn">DEL</button></td>
+          </tr>
+        </div>
+
+        <div class="trdiv">
+
+          <tr class="trdiv">
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>+</button></td>
+          </tr>
+        </div>
+
+        <div class="trdiv">
+
+          <tr class="trdiv">
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>-</button></td>
+          </tr>
+        </div>
+
+
+        <div class="trdiv">
+
+          <tr class="trdiv">
+            <td><button>.</button></td>
+            <td><button>0</button></td>
+            <td><button>/</button></td>
+            <td><button>x</button></td>
+          </tr>
+        </div>
+
+
+        <div class="trdiv lstbtn">
+
+          <tr class="trdiv ">
+            <td><button  onclick="restall()" class="blubtn ">RESET</button></td>
+            <td><button class="redbtn">=</button></td>
+
+          </tr>
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </div>
   </div>
-
-  <!-- for screen -->
-  <div class="screen">
-    <p>399,981</p>
-  </div>
-
-  <!-- buttons -->
-
-  <div class="btns">
-    <div class="trdiv">
-
-      <tr class="trdiv">
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td ><button class="blubtn"  >DEL</button></td>
-      </tr>
-    </div>
- 
-    <div class="trdiv">
-
-      <tr class="trdiv">
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>+</button></td>
-      </tr>
-    </div>
-
-    <div class="trdiv">
-
-      <tr class="trdiv">
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>-</button></td>
-      </tr>
-    </div>
-
-
-    <div class="trdiv">
-
-      <tr class="trdiv">
-        <td><button>.</button></td>
-        <td><button>0</button></td>
-        <td><button>/</button></td>
-        <td><button>x</button></td>
-      </tr>
-    </div>
-
-    
-    <div class="trdiv lstbtn">
-
-      <tr class="trdiv ">
-        <td><button class="blubtn">RESET</button></td>
-        <td><button class="redbtn">=</button></td>
-      
-      </tr>
-    </div>
-    
-    
-  
-
-    
-  </div>
-
-
-</div>
-</div>
 
 
 
 
   <script src="index.js"></script>
 </body>
+
 </html>
