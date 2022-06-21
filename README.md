@@ -1,6 +1,6 @@
 
 https://tejasx16.github.io/Calculator.github.io/
-deploy on 
+Live on 
 
 
 # Frontend Mentor - Calculator app
