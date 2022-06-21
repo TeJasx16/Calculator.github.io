@@ -36,6 +36,7 @@ const btn2 = () => {
   }
   redbtn.classList.remove("thiredbtn");
 
+
   mainbg.classList.add("secbg");
   thems.classList.add("secthm");
   chkbtn.classList.add("secchk");
@@ -69,9 +70,55 @@ const btn3 = () => {
 // all cal code
 
 // for reset button
-let scrnum = document.querySelector('#scrnum');
+let scr = document.getElementById('scrnum');
+const allbtns=document.querySelectorAll('button')
+let bt;
+let scrrenvalue = "";
 
-const restall = () =>{
-   scrnum.innerHTML ='0';
-   
+for (item of allbtns) {
+    item.addEventListener('click', (e) => {
+        bt = e.target.innerText;
+       
+        
+
+        if (bt == 'x') {
+            bt = '*';
+            scrrenvalue += bt;
+            scr.innerText = scrrenvalue;
+        }
+        else if (bt == '=') {
+          if(!scr.innerText)
+          {
+            return
+          }
+          scrrenvalue = eval (scrrenvalue);
+          scr.innerText= scrrenvalue;
+        }
+
+
+        else if (bt == 'RESET') {
+            scrrenvalue = "";
+            scr.innerText = scrrenvalue;
+        }
+        
+        else if (bt == 'DEL') {
+          scrrenvalue=scr.innerText;
+          scrrenvalue=scrrenvalue.slice(0,-1);
+          scr.innerText = scrrenvalue
+      }
+
+
+        else{
+            scrrenvalue +=bt;
+            scr.innerText=scrrenvalue;
+          
+        }
+    })
+
 }
+
+
+
+
+
+

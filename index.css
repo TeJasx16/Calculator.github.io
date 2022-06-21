@@ -53,6 +53,7 @@
 }
 
 .rng {
+    
     justify-content: space-between;
     height: 35px;
     width: 65px;
@@ -70,6 +71,7 @@
 }
 
 .chkbtn {
+   
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -82,12 +84,11 @@
     width: 60px;
 }
 
-#chkbtn input {
-    background: black;
+input[type='radio']
+{
     cursor: pointer;
-
-
 }
+
 
 
 
@@ -173,6 +174,9 @@ button {
 /* for sec theme */
 
 .secbg {
+    transition: all;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
     color: black;
     background-color: hsl(0, 0%, 90%);
 }
@@ -216,6 +220,9 @@ button {
 
 /* fro 3 theme */
 .thibg {
+      transition: all;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
     color: hsl(52, 100%, 62%);
     background-color: hsl(268, 75%, 9%);
 }
